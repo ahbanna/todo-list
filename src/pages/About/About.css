@@ -1,0 +1,13 @@
+.about-area,
+.contact-area {
+  height: 100vh;
+  background-image: linear-gradient(30deg, #d88531, #d4145a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-area h2,
+.contact-area h2 {
+  font-size: 48px;
+  font-weight: 700;
+}

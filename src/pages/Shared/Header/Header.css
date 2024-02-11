@@ -1,6 +1,3 @@
-.site-logo {
-  /* height: 80px; */
-}
 .justify-content-center.navbar-nav a.active {
   color: #ffb500;
 }
@@ -14,15 +11,17 @@
 .navbar-nav a {
   color: #000;
   padding: 0 10px;
-  font-size: 16px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   position: relative;
   display: inline-block;
   transition: 0.3s;
   letter-spacing: 2px;
   text-decoration: none;
+  font-weight: 600;
 }
-
+.navbar-nav a:hover {
+  color: #d88531;
+}
 .navbar-toggler.collapsed {
   background-color: #fff;
 }

@@ -10,10 +10,6 @@ const Header = () => {
       title: "Home",
     },
     {
-      path: "/menu",
-      title: "Menu",
-    },
-    {
       path: "/about",
       title: "About",
     },

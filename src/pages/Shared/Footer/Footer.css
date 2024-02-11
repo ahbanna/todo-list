@@ -1,0 +1,73 @@
+.footer-area {
+  padding: 70px 0;
+  background: #f0f0f0;
+}
+.footer-area .container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text p {
+  margin: 20px 0;
+}
+.footer-area .social-icon li {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 55% 45% 62% 38% / 42% 40% 60% 58%;
+  transition: 0.5s;
+}
+.footer-area .social-link ul li:hover {
+  transition: 0.5s;
+  border-radius: 42% 58% 43% 57% / 42% 40% 60% 58%;
+  background: #000;
+  transform: rotate(0deg);
+}
+.footer-area .twitter {
+  background: #55acee;
+}
+.footer-area .facebook {
+  background: #3b5998;
+}
+.footer-area .behance {
+  background: #0056ff;
+}
+.footer-area .instagram {
+  background: #e4405f;
+}
+.footer-area .dribble {
+  background: #c1346b;
+}
+/*  */
+
+.footer-right h3 {
+  color: #000;
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.footer-single-content span {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin: 15px 0;
+}
+
+.footer-single-content a {
+  color: #4d4848;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-single-content a:hover {
+  color: #d88531;
+}
