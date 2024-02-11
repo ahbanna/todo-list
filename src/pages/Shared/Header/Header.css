@@ -1,0 +1,31 @@
+.site-logo {
+  /* height: 80px; */
+}
+.justify-content-center.navbar-nav a.active {
+  color: #ffb500;
+}
+.header-area {
+  background: transparent;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+}
+.navbar-nav a {
+  color: #000;
+  padding: 0 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.navbar-toggler.collapsed {
+  background-color: #fff;
+}
+.navbar-toggler {
+  background: #fff;
+}
