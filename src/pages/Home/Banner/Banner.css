@@ -73,10 +73,7 @@
   .banner-img {
     display: none;
   }
-  .primary-btn button {
-    font-size: 16px;
-    padding: 8px 25px;
-  }
+ 
 }
 /* Mobile device */
 @media (max-width: 575px) {

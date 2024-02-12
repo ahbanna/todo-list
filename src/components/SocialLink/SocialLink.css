@@ -15,7 +15,6 @@
   color: #fff;
 }
 .social-link ul li:hover {
-  /* transform: rotate(360deg); */
   transition: 0.3s;
 }
 

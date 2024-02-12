@@ -62,4 +62,8 @@
 }
 /* Mobile device */
 @media (max-width: 575px) {
+  .primary-btn button {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
 }

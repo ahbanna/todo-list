@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./TodoList.css";
-import { Button, Container, Modal } from "react-bootstrap";
+import { Container, Modal } from "react-bootstrap";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { RiPencilFill } from "react-icons/ri";
 
 const TodoList = () => {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState(() => {
+    const storedList = localStorage.getItem("todoList");
+    return storedList ? JSON.parse(storedList) : [];
+  });
   const [item, setItem] = useState("");
   const [modalShow, setModalShow] = useState(false);
   const [editIndex, setEditIndex] = useState(null);
@@ -15,19 +18,20 @@ const TodoList = () => {
   const [completedTasks, setCompletedTasks] = useState(0);
 
   useEffect(() => {
+    localStorage.setItem("todoList", JSON.stringify(list));
     setTotalTasks(list.length);
     setCompletedTasks(list.filter((todo) => todo.completed).length);
   }, [list]);
 
   const AddToList = () => {
-    list.push({ task: item, completed: false });
-    setList([...list]);
+    setList([...list, { task: item, completed: false }]);
     setItem("");
   };
 
   const RemoveItem = (index) => {
-    list.splice(index, 1);
-    setList([...list]);
+    const updatedList = [...list];
+    updatedList.splice(index, 1);
+    setList(updatedList);
   };
 
   const handleEditModalOpen = (index) => {
@@ -37,15 +41,16 @@ const TodoList = () => {
   };
 
   const handleEditItem = () => {
-    list[editIndex].task = editedItem;
-    setList([...list]);
+    const updatedList = [...list];
+    updatedList[editIndex].task = editedItem;
+    setList(updatedList);
     setModalShow(false);
   };
 
   const toggleCompleted = (index) => {
-    const newList = [...list];
-    newList[index].completed = !newList[index].completed;
-    setList(newList);
+    const updatedList = [...list];
+    updatedList[index].completed = !updatedList[index].completed;
+    setList(updatedList);
   };
 
   return (
