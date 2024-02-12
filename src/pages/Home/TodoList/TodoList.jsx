@@ -150,7 +150,7 @@ const TodoList = () => {
           />
         </Modal.Body>
         <Modal.Footer>
-          <button onClick={handleEditItem}>Save Changes</button>
+          <button onClick={handleEditItem}>Save</button>
         </Modal.Footer>
       </Modal>
     </div>

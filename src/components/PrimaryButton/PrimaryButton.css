@@ -35,3 +35,31 @@
   right: 0;
   opacity: 1;
 }
+
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .primary-btn button {
+    font-size: 17px;
+    padding: 8px 25px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .primary-btn button {
+    font-size: 16px;
+    padding: 8px 25px;
+  }
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .primary-btn button {
+    font-size: 16px;
+    padding: 8px 25px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+}

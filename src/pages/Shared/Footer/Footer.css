@@ -5,8 +5,8 @@
 .footer-area .container {
   display: grid;
   grid-template-columns: 30% 70%;
+  grid-gap: 20px;
 }
-
 .footer-contact {
   display: flex;
   justify-content: space-between;
@@ -70,4 +70,70 @@
 
 .footer-single-content a:hover {
   color: #d88531;
+}
+
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer-right h3 {
+    font-size: 34px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-area .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-left {
+    text-align: center;
+  }
+  .footer-right h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .footer-single-content span {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer-area .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-left {
+    text-align: center;
+  }
+  .footer-right h3 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .footer-single-content span {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .footer-area .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-left {
+    text-align: center;
+  }
+  .footer-right h3 {
+    font-size: 23px;
+    text-align: center;
+  }
+  .footer-contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-single-content span {
+    margin: 5px 0;
+    font-size: 16px;
+  }
 }

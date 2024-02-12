@@ -103,3 +103,98 @@ input[type="text"] {
   height: 40px;
   padding: 5px 20px;
 }
+
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .task-count {
+    right: 0;
+    top: 22%;
+    padding: 10px;
+  }
+  .task-count p {
+    font-size: 14px;
+  }
+  .empty-msg p {
+    font-size: 18px;
+  }
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-area input {
+    height: 38px;
+    width: 80%;
+  }
+  .input-area button {
+    height: 35px;
+    border: 1px solid #d88531;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+  }
+  .task-count {
+    right: 0;
+    top: 53%;
+    padding: 10px;
+  }
+  .task-count p {
+    font-size: 13px;
+  }
+  .empty-msg p {
+    font-size: 16px;
+  }
+  .todo-table th {
+    font-size: 14px;
+  }
+  .todo-table button {
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-area input {
+    height: 38px;
+    width: 80%;
+  }
+  .input-area button {
+    height: 35px;
+    border: 1px solid #d88531;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+  }
+  .task-count {
+    right: 0;
+    top: 50%;
+    padding: 5px;
+  }
+  .task-count p {
+    font-size: 12px;
+  }
+  .empty-msg p {
+    font-size: 16px;
+  }
+  .todo-table th {
+    font-size: 14px;
+  }
+  .todo-table button {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 12px;
+  }
+}

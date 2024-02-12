@@ -11,7 +11,6 @@
 .navbar-nav a {
   color: #000;
   padding: 0 10px;
-  /* text-transform: uppercase; */
   position: relative;
   display: inline-block;
   transition: 0.3s;
@@ -27,4 +26,29 @@
 }
 .navbar-toggler {
   background: #fff;
+}
+
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-area img {
+    height: 35px;
+  }
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .header-area img {
+    height: 30px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .header-area img {
+    height: 30px;
+  }
 }

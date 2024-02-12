@@ -9,8 +9,7 @@ const Banner = () => {
       <Container>
         <div className="banner-text">
           <h1 className="banner-title">
-            Optimize Your Workflow
-            <span>Efficiently.</span>
+            Optimize Your Workflow <span>Efficiently.</span>
           </h1>
           <h3 className="banner-subtitle">
             Effortlessly Plan, Track, and Organize Your Tasks

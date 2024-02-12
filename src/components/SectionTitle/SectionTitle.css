@@ -9,3 +9,37 @@
   font-size: 18px;
   opacity: 0.8;
 }
+
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-title {
+    font-size: 38px;
+  }
+  .section-subtitle {
+    font-size: 16px;
+  }
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .section-title {
+    font-size: 36px;
+  }
+  .section-subtitle {
+    font-size: 16px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .section-title {
+    font-size: 34px;
+  }
+  .section-subtitle {
+    font-size: 16px;
+  }
+}
